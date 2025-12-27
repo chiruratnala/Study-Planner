@@ -1,52 +1,43 @@
-🎓 Study Planner Web App
-A modern, cloud-synced academic task manager designed to help students organize assignments, track productivity, and visualize progress. Built with Vanilla JavaScript, Tailwind CSS, and Firebase.
+# 🎓 Study Planner Web App
 
-(Replace with an actual screenshot of your dashboard)
+A modern, cloud-synced academic task manager designed to help students organize assignments, track productivity, and visualize progress. Built with **Vanilla JavaScript**, **Tailwind CSS**, and **Firebase**.
 
-✨ Features
-☁️ Cloud Sync: Real-time data synchronization across all devices using Firebase Realtime Database.
+<img width="1920" height="1080" alt="Screenshot (390)" src="https://github.com/user-attachments/assets/1912f3e3-7159-49e4-b6cd-e5dd513b4013" />
 
-🔐 Secure Authentication: Google Sign-In integration via Firebase Auth.
 
-📊 Analytics Dashboard:
+## ✨ Features
 
-"Instagram-style" Daily Activity chart (Last 7 days).
+* **☁️ Cloud Sync:** Real-time data synchronization across all devices using **Firebase Realtime Database**.
+* **🔐 Secure Authentication:** Google Sign-In integration via Firebase Auth.
+* **📊 Analytics Dashboard:**
+    * "Instagram-style" Daily Activity chart (Last 7 days) with navigation.
+    * Subject performance progress bars.
+    * Completion rates and overdue task tracking.
+* **📅 Calendar View:** Interactive monthly calendar to visualize deadlines.
+* **✅ Task Management:** Add, edit, delete, and filter tasks (Pending, In Progress, Completed).
+* **🌙 Dark Mode:** Automatic theme detection based on system preferences.
+* **📱 Fully Responsive:** Optimized for mobile, tablet, and desktop.
+* **🔔 Notifications:** Browser notifications for tasks due soon.
 
-Subject performance progress bars.
+## 🛠️ Tech Stack
 
-Completion rates and overdue task tracking.
+* **Frontend:** HTML5, JavaScript (ES6 Modules)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) (via CDN)
+* **Icons:** [Lucide Icons](https://lucide.dev/)
+* **Charts:** [Chart.js](https://www.chartjs.org/)
+* **Backend / Database:** [Firebase](https://firebase.google.com/) (Auth + Realtime Database)
 
-📅 Calendar View: Interactive monthly calendar to visualize deadlines.
+## 🚀 Getting Started
 
-✅ Task Management: Add, edit, delete, and filter tasks (Pending, In Progress, Completed).
+### Prerequisites
+You need a **Google Firebase** account to run this application.
 
-🌙 Dark Mode: Automatic theme detection based on system preferences.
-
-📱 Fully Responsive: Optimized for mobile, tablet, and desktop.
-
-🔔 Notifications: Browser notifications for tasks due soon (configurable).
-
-🛠️ Tech Stack
-Frontend: HTML5, JavaScript (ES6 Modules)
-
-Styling: Tailwind CSS (via CDN)
-
-Icons: Lucide Icons
-
-Charts: Chart.js
-
-Backend / Database: Firebase (Auth + Realtime Database)
-
-🚀 Getting Started
-Prerequisites
-You need a Google Firebase account to run this application.
-
-1. Clone the Repository
-Bash
-
-git clone https://github.com/yourusername/study-planner.git
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/yourusername/study-planner.git](https://github.com/yourusername/study-planner.git)
 cd study-planner
-2. Create a Firebase Project
+```
+### 2. Create a Firebase Project
 Go to the Firebase Console.
 
 Click Add project and follow the setup steps.
@@ -55,16 +46,16 @@ Once created, click the Web icon (</>) to register a web app.
 
 Copy the firebaseConfig object provided (you will need this later).
 
-3. Enable Authentication
+### 3. Enable Authentication
 In your Firebase Console, go to Build > Authentication.
 
 Click Get Started.
 
 Select Google as a Sign-in method and enable it.
 
-Important: In the Authentication settings, look for Authorized Domains. Ensure localhost and 127.0.0.1 are added.
+Important: In the Authentication settings, look for Authorized Domains. Ensure localhost and 127.0.0.1 are listed.
 
-4. Enable Realtime Database
+### 4. Enable Realtime Database
 Go to Build > Realtime Database.
 
 Click Create Database.
@@ -72,7 +63,7 @@ Click Create Database.
 Choose a location and start in Locked Mode (we will update rules next).
 
 Go to the Rules tab and paste the following security rules to ensure users can only access their own data:
-
+```bash
 JSON
 
 {
@@ -85,9 +76,10 @@ JSON
     }
   }
 }
-5. Configure the Application
+```
+### 5. Configure the Application
 Open index.html in your code editor. Scroll to the bottom script section and replace the placeholder config with your actual Firebase keys:
-
+```bash
 JavaScript
 
 // --- REPLACE WITH YOUR CONFIG ---
@@ -100,7 +92,8 @@ const firebaseConfig = {
     messagingSenderId: "YOUR_SENDER_ID",
     appId: "YOUR_APP_ID"
 };
-6. Run the Application
+```
+### 6. Run the Application
 Since this project uses ES6 Modules, you cannot simply open the HTML file. You must run it on a local server.
 
 Using VS Code:
@@ -125,4 +118,4 @@ Fix: Go to Firebase Console > Authentication > Settings > Authorized Domains and
 
 Charts look squashed or stretched
 
-The analytics charts are optimized for a container height of 240px. Ensure the parent container in the HTML has relative positioning.
+The analytics charts are optimized for a container height of 240px. Ensure the parent container in the HTML has relative positioning (already handled in index.html).
