@@ -1,8 +1,9 @@
 # 🎓 Study Planner Web App
 
 A modern, cloud-synced academic task manager designed to help students organize assignments, track productivity, and visualize progress. Built with **Vanilla JavaScript**, **Tailwind CSS**, and **Firebase**.
+<img width="1812" height="801" alt="Screenshot (391)" src="https://github.com/user-attachments/assets/6bd0e312-50b4-480c-ac9a-6438f2450c87" />
 
-<img width="1920" height="1080" alt="Screenshot (390)" src="https://github.com/user-attachments/assets/1912f3e3-7159-49e4-b6cd-e5dd513b4013" />
+https://stdyplanner.netlify.app/
 
 
 ## ✨ Features
