@@ -120,3 +120,7 @@ Fix: Go to Firebase Console > Authentication > Settings > Authorized Domains and
 Charts look squashed or stretched
 
 The analytics charts are optimized for a container height of 240px. Ensure the parent container in the HTML has relative positioning (already handled in index.html).
+
+### Author 
+## Chiru Ratnala
+**GitHub:** https://github.com/chiruratnala
