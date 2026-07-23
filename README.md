@@ -5,7 +5,6 @@ A modern, cloud-synced academic task manager designed to help students organize 
 
 https://stdyplanner.netlify.app/
 
-
 ## ✨ Features
 
 * **☁️ Cloud Sync:** Real-time data synchronization across all devices using **Firebase Realtime Database**.
